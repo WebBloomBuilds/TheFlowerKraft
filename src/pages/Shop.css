@@ -1,0 +1,230 @@
+/* Shop Page Styles */
+.shop-hero {
+  background-color: var(--bg-surface);
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 3.5rem 0 2.5rem 0;
+  text-align: center;
+  transition: background-color var(--transition-smooth);
+}
+
+.shop-hero-content {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.shop-title {
+  margin-bottom: 0.85rem;
+}
+
+.shop-subtitle {
+  font-size: 1.05rem;
+}
+
+/* Demo Scope Alert */
+.demo-scope-alert {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  background-color: var(--bg-card);
+  border: 1px dashed var(--accent);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.25rem;
+  margin: 2rem auto 0 auto;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  box-shadow: var(--shadow-sm);
+}
+
+.alert-icon {
+  color: var(--accent);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.alert-text strong {
+  color: var(--primary);
+}
+
+/* Shop Controls */
+.shop-controls-section {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.controls-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.search-box-wrap {
+  position: relative;
+  flex: 1;
+  min-width: 280px;
+  max-width: 480px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-light);
+  pointer-events: none;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.8rem 2.5rem 0.8rem 2.75rem;
+  font-size: 0.95rem;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border-subtle);
+  background-color: var(--bg-card);
+  color: var(--text-main);
+  outline: none;
+  transition: all var(--transition-fast);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.search-input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px var(--primary-tint);
+}
+
+.clear-search-btn {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  line-height: 1;
+}
+
+.sort-box-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.sort-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.sort-select {
+  padding: 0.65rem 1.2rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-subtle);
+  background-color: var(--bg-card);
+  color: var(--text-main);
+  font-size: 0.88rem;
+  font-weight: 500;
+  outline: none;
+  cursor: pointer;
+  transition: border-color var(--transition-fast);
+}
+
+.sort-select:focus {
+  border-color: var(--primary);
+}
+
+/* Category Filter Chips */
+.category-chips-track {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  overflow-x: auto;
+  padding: 0.4rem 0 0.8rem 0;
+  scrollbar-width: thin;
+}
+
+.category-chip-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.55rem 1.15rem;
+  border-radius: var(--radius-full);
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: all var(--transition-fast);
+}
+
+.category-chip-btn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.category-chip-btn.is-selected {
+  background-color: var(--primary);
+  color: var(--primary-contrast);
+  border-color: var(--primary);
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+/* Grid Meta */
+.grid-meta-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.results-count strong {
+  color: var(--text-main);
+}
+
+.reset-filter-btn {
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: underline;
+  font-size: 0.85rem;
+}
+
+/* Product Card Extra Details */
+.product-card-footer-actions {
+  margin-top: 0.85rem;
+  padding-top: 0.65rem;
+  border-top: 1px dashed var(--border-subtle);
+  text-align: center;
+}
+
+.wa-inquiry-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  transition: color var(--transition-fast);
+}
+
+.wa-inquiry-link:hover {
+  color: var(--primary);
+}
+
+/* No Results */
+.no-results-card {
+  text-align: center;
+  padding: 4.5rem 2rem;
+  margin: 2rem 0;
+}
+
+.no-results-icon {
+  color: var(--accent);
+  margin-bottom: 1.25rem;
+}

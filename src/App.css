@@ -1,0 +1,50 @@
+/* App Container Styles */
+.site-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.site-main {
+  flex: 1;
+  outline: none;
+}
+
+/* Floating WhatsApp Concierge Button */
+.floating-wa-btn {
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+  z-index: 850;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  background-color: #25D366;
+  color: #FFFFFF;
+  padding: 0.8rem 1.35rem;
+  border-radius: var(--radius-full);
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.35);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  transition: all var(--transition-fast);
+  border: 2px solid #FFFFFF;
+}
+
+.floating-wa-btn:hover {
+  background-color: #20BA5A;
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 12px 30px rgba(37, 211, 102, 0.45);
+}
+
+@media (max-width: 600px) {
+  .floating-wa-btn {
+    bottom: 1.25rem;
+    left: 1.25rem;
+    padding: 0.75rem;
+  }
+  .floating-wa-label {
+    display: none;
+  }
+}

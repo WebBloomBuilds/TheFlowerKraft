@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useTheme } from '../context/ThemeContext';
 import { Phone, MessageCircle, ShoppingBag, Menu, X, Search } from 'lucide-react';
+import logoImg from '../assets/logo.png';
 import './Navbar.css';
 
 export default function Navbar() {
@@ -48,7 +49,7 @@ export default function Navbar() {
             <a
               href="tel:+919059041818"
               className="top-contact-link"
-              title="Call TheFlowerKart Concierge"
+              title="Call TheFlowerKraft Concierge"
             >
               <Phone size={13} />
               <span>9059041818</span>
@@ -57,7 +58,7 @@ export default function Navbar() {
             <span className="divider-dot" aria-hidden="true">•</span>
 
             <a
-              href="https://wa.me/919059041818?text=Hello%20TheFlowerKart,%20I%20would%20like%20to%20enquire%20about%20flowers%20and%20gifting."
+              href="https://wa.me/919059041818?text=Hello%20TheFlowerKraft,%20I%20would%20like%20to%20enquire%20about%20flowers%20and%20gifting."
               target="_blank"
               rel="noopener noreferrer"
               className="top-contact-link top-wa-link"
@@ -78,18 +79,18 @@ export default function Navbar() {
             type="button"
             className="brand-logo-wrap"
             onClick={() => handleNavClick('home')}
-            aria-label="TheFlowerKart - Return to Homepage"
+            aria-label="TheFlowerKraft - Return to Homepage"
           >
-            {/* The uploaded logo is preserved exactly as provided */}
+            {/* Official Logo preserved exactly, loaded via direct asset resolution */}
             <img
-              src="/logo.png"
-              alt="TheFlowerKart Floral Gift Emblem"
+              src={logoImg}
+              alt="TheFlowerKraft logo"
               className="brand-logo-img"
-              width="58"
-              height="58"
+              width="54"
+              height="54"
             />
             <div className="brand-text-block">
-              <span className="brand-title">TheFlowerKart</span>
+              <span className="brand-title">TheFlowerKraft</span>
               <span className="brand-tagline">FLOWERS • CAKES • GIFTS • CELEBRATIONS</span>
             </div>
           </button>
@@ -122,7 +123,7 @@ export default function Navbar() {
               title="Search Catalog"
               aria-label="Search Catalog"
             >
-              <Search size={19} />
+              <Search size={18} />
             </button>
 
             {/* Live Shopping Cart Icon with Badge */}
@@ -133,7 +134,7 @@ export default function Navbar() {
               title="Shopping Cart"
               aria-label="View Shopping Cart"
             >
-              <ShoppingBag size={19} />
+              <ShoppingBag size={18} />
               {cartItemCount > 0 && <span className="cart-badge">{cartItemCount}</span>}
             </button>
 
@@ -145,7 +146,7 @@ export default function Navbar() {
               aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
               aria-expanded={mobileMenuOpen}
             >
-              {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+              {mobileMenuOpen ? <X size={22} /> : <Menu size={22} />}
             </button>
           </div>
         </div>
@@ -157,8 +158,8 @@ export default function Navbar() {
           <div className="mobile-drawer" onClick={(e) => e.stopPropagation()}>
             <div className="mobile-drawer-header">
               <div className="drawer-logo-wrap">
-                <img src="/logo.png" alt="TheFlowerKart" className="drawer-logo" />
-                <span className="drawer-brand-name">TheFlowerKart</span>
+                <img src={logoImg} alt="TheFlowerKraft logo" className="drawer-logo" />
+                <span className="drawer-brand-name">TheFlowerKraft</span>
               </div>
               <button
                 type="button"

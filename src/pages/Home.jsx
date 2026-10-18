@@ -17,6 +17,7 @@ import {
   Truck,
   Heart,
 } from 'lucide-react';
+import logoImg from '../assets/logo.png';
 import './Home.css';
 
 export default function Home() {
@@ -31,7 +32,7 @@ export default function Home() {
           1. TYPOGRAPHY-FOCUSED HERO (STRICTLY NO MAIN/HERO/BANNER IMAGES)
           Crafted with pure typography, CSS gradients, and floating floral shapes.
          ========================================================================= */}
-      <section className="typography-hero-section" aria-label="Welcome to TheFlowerKart">
+      <section className="typography-hero-section" aria-label="Welcome to TheFlowerKraft">
         {/* Ambient CSS Radial Mesh & Gradients */}
         <div className="hero-mesh-background" aria-hidden="true" />
 
@@ -50,13 +51,13 @@ export default function Home() {
           {/* Brand Emblem & Tagline Badge */}
           <div className="hero-brand-emblem-badge">
             <img
-              src="/logo.png"
-              alt="TheFlowerKart Logo Emblem"
+              src={logoImg}
+              alt="TheFlowerKraft logo"
               className="hero-emblem-img"
               width="50"
               height="50"
             />
-            <span className="hero-badge-text">TheFlowerKart • Luxury Floral & Gifting Atelier</span>
+            <span className="hero-badge-text">TheFlowerKraft • Luxury Floral & Gifting Atelier</span>
           </div>
 
           {/* Main Headline */}

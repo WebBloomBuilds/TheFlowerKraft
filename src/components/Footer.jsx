@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTheme } from '../context/ThemeContext';
 import { Phone, MessageCircle, ArrowRight } from 'lucide-react';
+import logoImg from '../assets/logo.png';
 import './Footer.css';
 
 export default function Footer() {
@@ -16,14 +17,14 @@ export default function Footer() {
           <div className="footer-col brand-col">
             <div className="footer-logo-wrap">
               <img
-                src="/logo.png"
-                alt="TheFlowerKart Logo"
+                src={logoImg}
+                alt="TheFlowerKraft logo"
                 className="footer-logo"
                 width="64"
                 height="64"
               />
               <div>
-                <span className="footer-brand-title">TheFlowerKart</span>
+                <span className="footer-brand-title">TheFlowerKraft</span>
                 <span className="footer-brand-sub">FLOWERS • CAKES • GIFTS • CELEBRATIONS</span>
               </div>
             </div>
